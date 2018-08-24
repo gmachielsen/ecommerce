@@ -4,7 +4,7 @@ from accounts.views import register
 from django.conf.urls import url
 
 urlpatterns = [ 
-     path('register/', register, name='register'),
+    path('register/', register, name='register'),
     path('login/', login, {'template_name': 'accounts/login.html'}, name='login'),
     path('logout/', logout, name='logout'),
     
